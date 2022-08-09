@@ -1,6 +1,6 @@
 {
   "name": "webpack-dev-server-friday-test",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "",
   "main": "./dist/bundle.js",
   "files": [
@@ -8,7 +8,8 @@
   ],
   "scripts": {
     "dev": "webpack serve --config ./bundler/webpack.dev.js",
-    "build": "webpack --config ./bundler/webpack.prod.js"
+    "build": "webpack --config ./bundler/webpack.prod.js",
+    "prepublishOnly": "webpack --mode=production"
   },
   "keywords": [],
   "author": "",
