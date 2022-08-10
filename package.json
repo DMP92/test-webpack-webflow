@@ -1,15 +1,19 @@
 {
   "name": "webpack-dev-server-friday-test",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "main": "./dist/bundle.js",
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DMP92/test-webpack-webflow.git"
+  },
   "scripts": {
     "dev": "webpack serve --config ./bundler/webpack.dev.js",
     "build": "webpack --config ./bundler/webpack.prod.js",
-    "prepublishOnly": "webpack ./bundler/webpack.prod.js"
+    "prepublishOnly": "webpack --mode=production"
   },
   "keywords": [],
   "author": "",
@@ -36,6 +40,6 @@
     "os-browserify": "^0.3.0",
     "portfinder-sync": "^0.0.2",
     "raw-loader": "^4.0.2",
-    "vercel": "^24.0.0"
+    "vercel": "^19.1.2"
   }
 }
