@@ -12,8 +12,7 @@
   },
   "scripts": {
     "dev": "webpack serve --config ./bundler/webpack.dev.js",
-    "build": "webpack --config ./bundler/webpack.prod.js",
-    "prepublishOnly": "webpack --mode=production"
+    "build": "webpack --config ./bundler/webpack.prod.js"
   },
   "keywords": [],
   "author": "",
