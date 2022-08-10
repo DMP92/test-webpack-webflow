@@ -7,5 +7,9 @@ module.exports = merge(
     {
     mode: 'production',
     devtool: 'inline-source-map',
-    
+    resolve: {
+        fallback: {
+            "os": require.resolve("os-browserify/browser")
+        }
+    }
 });

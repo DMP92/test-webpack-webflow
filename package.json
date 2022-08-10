@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "webpack serve --config ./bundler/webpack.dev.js",
     "build": "webpack --config ./bundler/webpack.prod.js",
-    "prepublishOnly": "webpack --mode=production"
+    "prepublishOnly": "webpack ./bundler/webpack.prod.js"
   },
   "keywords": [],
   "author": "",
@@ -33,6 +33,7 @@
     "babel-loader": "^8.2.3",
     "file-loader": "^6.2.0",
     "ip": "^1.1.5",
+    "os-browserify": "^0.3.0",
     "portfinder-sync": "^0.0.2",
     "raw-loader": "^4.0.2",
     "vercel": "^24.0.0"
